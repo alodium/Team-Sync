@@ -1,5 +1,3 @@
-// Git: https://github.com/alodium/Team-Sync
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Parallax } from 'react-spring'
@@ -17,7 +15,7 @@ switch (today) {
     CLOSING_PAGE_CONTNET += '<p><H1>Friday dance ?🎉</H1></p>'
 }
 
-const names = ['Oliver 🐙', 'Minjung 👪 ', 'Elmars 🏂', 'Jennie 🤦', 'Madison 🦉', 'André 😋', 'Lior 🐃', 'Martin 😾', 'Kevin', `Mathilde 🙆`]
+const names = ['Oliver 🐙', 'Minjung 👪 ', 'Elmars 🏂', 'Jennie 🤦', 'Madison 🦉', 'André 😋', 'Lior 🐃', 'Martin 😾', 'Kevin 🦁', `Mathilde 🙆`]
 
 const OPEN_PAGE_CONTENT = '<p>Short and quick, </p><p> no tech discussions or long bug descriptions please</p>'
 let currentPage = 0
@@ -37,12 +35,6 @@ const Page = ({ content, offset, title, name = getRandomName(), onClick, gradien
     <Parallax.Layer offset={offset} speed={-0.2} onClick={onClick}>
       <div className={`slopeEnd g${gradient}`} />
     </Parallax.Layer>
-
-    {name === 'Kevin' && (
-      <Parallax.Layer offset={offset} speed={15} onClick={onClick}>
-        <img src="http://lesfa.cz/wp-content/uploads/2017/08/Wacken.png" style={{ opacity: 0.8 }} />
-      </Parallax.Layer>
-    )}
 
     <Parallax.Layer className="text header" offset={offset} speed={0.7}>
       <span>
@@ -117,9 +109,9 @@ function countdown(min, $el) {
   int = setInterval(function() {
     var c = tmp--,
       minutes = (c / 60) >> 0,
-      seconds = c - minutes * 60 + '',
+      seconds = (c - minutes * 60 + '').padStart(2, '0'),
       content = 'Ready?'
-    if (c === 1 && minutes === 0) {
+    if (c === 0 && minutes === 0) {
       content = 'NEXT! (action items?)'
       clearInterval(int)
     } else {
@@ -129,7 +121,7 @@ function countdown(min, $el) {
       $el.innerHTML = content
     }
 
-    tmp != 0 || (tmp = time)
+    tmp != -1 || (tmp = time)
   }, 1000)
   return counter
 }
