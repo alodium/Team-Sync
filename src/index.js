@@ -1,3 +1,5 @@
+// Git: https://github.com/alodium/Team-Sync
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Parallax } from 'react-spring'
