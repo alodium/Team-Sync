@@ -4,20 +4,28 @@ import { Parallax } from 'react-spring'
 import './styles.css'
 
 let CLOSING_PAGE_CONTNET = '<p></p>'
+let OPEN_PAGE_CONTENT = '<p> no tech discussions or long bug descriptions please</p>'
 
 var today = new Date().getDay()
+
 switch (today) {
   case 1:
     CLOSING_PAGE_CONTNET += '<p> videolunch videos?</p>' + '<p> anybody techtalk this week? (remember to invite the mobile team) </p>'
+    break
   case 2:
+    CLOSING_PAGE_CONTNET += '<p><H1>Who is doing the team meeting?</H1></p>'
+    OPEN_PAGE_CONTENT += '<p><b>First one - team meeting tickets 🥳</b></p>'
+    break
+  case 3:
     CLOSING_PAGE_CONTNET += '<p><H1>Who can check airbrake?</H1></p>'
+    break
   case 5:
     CLOSING_PAGE_CONTNET += '<p><H1>Friday dance ?🎉</H1></p>'
+    break
 }
 
 const names = ['Oliver 🐙', 'Minjung 👪 ', 'Elmars 🏂', 'Jennie 🤦', 'Madison 🦉', 'André 😋', 'Lior 🐃', 'Martin 😾', 'Kevin 🦁', `Mathilde 🙆`]
 
-const OPEN_PAGE_CONTENT = '<p>Short and quick, </p><p> no tech discussions or long bug descriptions please</p>'
 let currentPage = 0
 const nameCount = names.length
 const pageCount = nameCount + 2

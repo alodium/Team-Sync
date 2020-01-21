@@ -1,7 +1,7 @@
 {
-  "name": "frontendsync",
+  "name": "team-sync",
   "version": "1.0.0",
-  "description": "little random name display, based on a react-spring demo",
+  "description": "",
   "keywords": [],
   "homepage": "https://codesandbox.io/s/new",
   "main": "src/index.js",
