@@ -24,7 +24,8 @@ switch (today) {
     break
 }
 
-const names = ['Oliver 🐙',
+const names = [
+  'Oliver 🐙',
  'Minjung 👪 ',
  'Robert ?',
  'Jennie 🤦',
