@@ -24,7 +24,17 @@ switch (today) {
     break
 }
 
-const names = ['Oliver 🐙', 'Minjung 👪 ', 'Elmars 🏂', 'Jennie 🤦', 'Madison 🦉', 'André 😋', 'Lior 🐃', 'Martin 😾', 'Kevin 🦁', `Mathilde 🙆`]
+const names = ['Oliver 🐙',
+ 'Minjung 👪 ',
+ 'Robert ?',
+ 'Jennie 🤦',
+ 'Madison 🦉',
+ 'André 😋',
+ 'Lior 🐃',
+ 'Martin 😾',
+ 'Kevin 🦁',
+ 'Mathilde 🙆',
+      ]
 
 let currentPage = 0
 const nameCount = names.length
