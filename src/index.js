@@ -27,7 +27,7 @@ switch (today) {
 const names = [
   'Oliver 🐙',
  'Minjung 👪 ',
- 'Robert ?',
+ 'Robert ⛵',
  'Jennie 🤦',
  'Madison 🦉',
  'André 😋',
